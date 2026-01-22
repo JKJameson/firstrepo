@@ -34,8 +34,8 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(LED, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(500);                      // wait for a second
+  delay(500);               // wait for 500ms
   digitalWrite(LED, LOW);   // turn the LED off by making the voltage LOW
-  delay(500);                      // wait for a second
+  delay(500);               // wait for a 500ms
 
 }
