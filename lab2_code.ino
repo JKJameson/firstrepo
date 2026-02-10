@@ -1,11 +1,11 @@
-int PIN_LED = 2;
+int PIN = 2;
 
 // the setup routine runs once when you press reset:
 void setup() {
   // initialize serial communication at 9600 bits per second:
   Serial.begin(9600);
 
-  pinMode(PIN_LED, OUTPUT);
+  pinMode(PIN, OUTPUT);
 }
 
 // the loop routine runs over and over again forever:
@@ -17,9 +17,9 @@ void loop() {
 
   // turn the LED on if potentiometer is > 400
   if (knobValue > 400) {
-    digitalWrite(PIN_LED, HIGH);
+    digitalWrite(PIN, HIGH);
   } else {
-    digitalWrite(PIN_LED, LOW);
+    digitalWrite(PIN, LOW);
   }
 
   // delay to reduce energy usage
